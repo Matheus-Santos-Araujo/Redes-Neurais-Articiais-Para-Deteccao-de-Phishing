@@ -1,12 +1,8 @@
-# -*- coding: utf-8 -*-
 """
-@author: matheus_araujo
+@author: Matheus Santos Araujo
 """
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.datasets import load_digits
-import matplotlib.pyplot as plt
 
 # Location of dataset
 url = "phishing.csv"
