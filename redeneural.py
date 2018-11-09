@@ -30,7 +30,7 @@ scaler.fit(X_train)
 X_train = scaler.transform(X_train)  
 X_test = scaler.transform(X_test)  
 
-# Realizando o treinamento com MLP
+# Realizando o treinamento com MLP (Numero de camadas e neuronios, funcao de ativacao e algoritmo quasi-newton)
 from sklearn.neural_network import MLPClassifier  
 mlp = MLPClassifier(hidden_layer_sizes=(5, 3), max_iter=1000, activation='logistic', tol=0.0001, solver = 'lbfgs')  
 mlp.fit(X_train, y_train.values.ravel())  
